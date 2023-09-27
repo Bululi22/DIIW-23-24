@@ -1,0 +1,14 @@
+body{
+ font-size: .7em;
+ font-family: "verdana";
+}
+p{
+ text-align: justify;
+}
+
+div:nth-of-type(1){  /*cajaarriba*/
+ background: url(../imagenes/arriba.gif) top center no-repeat;
+ border: solid 2px gray;
+ width: 600px;
+ margin: 30px auto;
+}

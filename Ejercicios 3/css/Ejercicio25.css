@@ -1,0 +1,13 @@
+body{
+ display: flex;
+ justify-content: space-evenly;
+}
+div{
+ height: 500px;
+ width: 600px;
+ background: url(../imagenes/madera1.png) bottom right  no-repeat, 
+             url(../imagenes/logo1.png) bottom left no-repeat, 
+             url(../imagenes/logo1.png) top left no-repeat, 
+             url(../imagenes/logo1.png) top right no-repeat,
+             rgb(100, 255, 80);
+}

@@ -1,0 +1,21 @@
+p{
+ width: 450px;
+ height: 120px;
+}
+.primero{
+ background-color: rgb(79, 255, 88);
+ border: solid black 4px;
+ border-right-style: none;
+ margin-left: 30px;
+}
+.segundo{
+ background-color: rgb(255, 229, 79);
+ border: double 8px #6c6cf5;
+ margin-top: 40px;
+}
+.tercero{
+ background-color: rgb(255, 79, 176);
+ border: dashed 12px #6c6cf5;
+ border-bottom: dashed 6px rgb(79, 243, 216);
+ margin-left: 60px;
+}

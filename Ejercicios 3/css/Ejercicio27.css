@@ -1,0 +1,30 @@
+body{
+ display: flex;
+}
+div{
+ width: 22vw;
+ background-color: aquamarine;
+ margin: 15px;
+ border: solid 10px rgb(175, 175, 175);
+}
+.recuadro1{
+ background-image: url(../imagenes/casa.png);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 35%;
+  padding: 15px;
+}
+.recuadro2{
+ background-image: url(../imagenes/casa.png);
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: 35%;
+  padding: 15px;
+}
+.recuadro3{
+ background-image: url(../imagenes/casa.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 35%;
+  padding: 15px;
+}

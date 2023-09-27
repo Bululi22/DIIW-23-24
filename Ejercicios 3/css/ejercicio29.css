@@ -1,0 +1,8 @@
+body{
+ background-image: url(../imagenes/loremIpsum.png);
+}
+div{
+ background-color: pink;
+ height: auto;
+ white-space: pre;
+}

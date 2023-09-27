@@ -1,0 +1,24 @@
+.recuadro1{
+ color: #ff000057;
+}
+.recuadro2{
+ color: #ff00009c;
+}
+.recuadro3{
+ color: red;
+}
+.recuadro4{
+ color: red;
+ padding-left: 8px;
+ padding-right: 8px;
+ background-color: #2fbbad;
+ border-radius: 8px;
+}
+.recuadro5{
+ color: red;
+ padding-left: 8px;
+ padding-right: 8px;
+ background-color: #2fbbad;
+ border-radius: 8px;
+ opacity: 31%;
+}

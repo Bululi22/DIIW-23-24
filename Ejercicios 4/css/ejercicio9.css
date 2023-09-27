@@ -1,0 +1,36 @@
+body{
+ background-image: url(../imagenes/paper.gif);
+}
+h1{
+ color: gray;
+ text-align: center;
+}
+.contenedor{
+ margin: auto;
+ margin-top: 50px;
+ background-color: lightcyan;
+ border: groove 10px lightgray;
+ width: 752px;
+}
+img{
+ border: solid 3px white;
+}
+div div{
+ display: inline-block;
+ width: 215px;
+ height: 180px;
+ background-color: lightblue;
+ border-bottom: solid 3px gray;
+ border-right: solid 3px gray;
+ margin: 10px;
+ padding: 5px;
+}
+a{
+ display: flow;
+ text-align: center;
+ text-decoration: none;
+
+ color: white;
+ font-family: "Trebuchet MS";
+ font-size: .7em;
+}

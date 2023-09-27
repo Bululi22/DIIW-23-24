@@ -1,0 +1,7 @@
+.recuadro1{
+ column-count: 3;
+ background: #c3c3c3;
+ border-radius: 20px;
+ padding: 19px;
+ margin: 0 18vw;
+}

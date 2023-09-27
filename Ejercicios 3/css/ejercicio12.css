@@ -1,0 +1,9 @@
+.titulo1{
+ text-shadow: 0px 0px 14px black;
+}
+.titulo2{
+ text-shadow: -1px -3px 3px black;
+}
+.titulo3{
+ text-shadow: -1px -3px 3px #c12121, -2px -1px 3px #f7f7f7, -2px 3px 4px #34c121;
+}
