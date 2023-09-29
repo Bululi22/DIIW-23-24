@@ -5,10 +5,47 @@ body{
 p{
  text-align: justify;
 }
-
-div:nth-of-type(1){  /*cajaarriba*/
+.cajaarriba{
  background: url(../imagenes/arriba.gif) top center no-repeat;
  border: solid 2px gray;
  width: 600px;
  margin: 30px auto;
 }
+body div div:first-child{ /*cajaabajo*/
+ background: url(../imagenes/abajo.gif) bottom left no-repeat;
+ padding: 58px;
+ padding-left: 69px;
+ padding-right: 75px;
+}
+p:nth-of-type(1){ /*parrafo1*/
+ background-color: lightblue;
+ line-height : 20px;
+ width: 300px;
+ margin: auto;
+}
+.cajita1{ /*cajita1*/
+ background-color: #ccf;
+ float: right;
+ margin: 11px;
+ padding: 15px;
+ text-align: center;
+ width: 150px;
+}
+.cajita2{ /*cajita2*/
+ background-color: #c9f;
+ float: left;
+ margin: 11px;
+ padding: 10px;
+ width: 60px;
+}
+p:nth-of-type(2){ /*parrafo2*/
+ background-color: lightcyan ;
+ padding: 10px;
+}
+.cajaabajo div:nth-of-type(3)>img{
+ float: right;
+ background-color: red;
+}
+
+
+
