@@ -42,10 +42,25 @@ p:nth-of-type(2){ /*parrafo2*/
  background-color: lightcyan ;
  padding: 10px;
 }
-.cajaabajo div:nth-of-type(3)>img{
- float: right;
- background-color: red;
+.cajaabajo div:nth-of-type(3)>img{ /*parrafo1*/
+ float: left;
 }
-
-
-
+p:nth-of-type(3){ /*parrafo3*/
+ background-color: lime ;
+ padding: 10px;
+}
+p:nth-of-type(4){ /*parrafo3*/
+ background-color: yellow ;
+ padding: 10px;
+}
+.cajaabajo div:nth-of-type(4)>img{ /*parrafo1*/
+ float: right;
+}
+a{
+ display: flex;
+ background-color: cyan;
+ clear: both;
+}
+.cajaabajo div:nth-of-type(5)>img{ /*parrafo1*/
+ float: left;
+}

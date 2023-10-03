@@ -1,0 +1,30 @@
+*{
+ border: solid 1px lightgray;
+}
+body{
+ display: flex;
+ margin: 0px;
+}
+header{
+ background-color: khaki;
+
+}
+nav{
+ background-color:lightblue;
+ flex: 1;
+
+}
+article{
+ background-color:lightgreen;
+ flex: 3;
+
+}
+aside{
+ background-color:lightblue;
+ flex: 1;
+
+}
+footer{
+ background-color: khaki;
+
+}
