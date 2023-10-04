@@ -1,0 +1,57 @@
+body{
+ display: flex;
+ flex-wrap: wrap;
+}
+li img{
+ place-self: center;
+ width: 5vw;
+}
+ol{
+ display: flex;
+ justify-content: space-between;
+ padding: 0px;
+ margin: 0px;
+}
+li{
+ display: flex;
+}
+li p{
+ padding: 1vh 1vw;
+ padding-left: 3vw;
+ background-color: #42ad3b;
+ color: white;
+}
+nav{
+ border-bottom: solid #42ad3b;
+ width: 100%;
+}
+aside{
+ float: left;
+ margin-right: 4vw;
+ color: #42ad3b;
+ width: 21vw;
+}
+aside p{
+ text-align: right;
+}
+aside p:nth-child(2n) {
+ text-align: left;
+ border-top: #42ad3b solid;
+ border-right:  #42ad3b solid;
+}
+main{
+ display: flex;
+ flex-direction: column;
+}
+section{
+ width: 70vw;
+}
+main section:nth-child(1){
+ display: flex;
+}
+main section:nth-child(2){
+ display: flex;
+}
+div img{
+ width: 10vw;
+}
