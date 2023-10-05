@@ -27,7 +27,6 @@ nav{
 }
 aside{
  float: left;
- margin-right: 4vw;
  color: #42ad3b;
  width: 21vw;
 }
@@ -39,12 +38,15 @@ aside p:nth-child(2n) {
  border-top: #42ad3b solid;
  border-right:  #42ad3b solid;
 }
+
 main{
  display: flex;
  flex-direction: column;
+ margin: 1vh auto;
 }
 section{
  width: 70vw;
+ margin: 1vh 0px;
 }
 main section:nth-child(1){
  display: flex;
@@ -52,6 +54,28 @@ main section:nth-child(1){
 main section:nth-child(2){
  display: flex;
 }
+section:nth-child(1) div:nth-child(even), section:nth-child(2) div:nth-child(odd){
+ border: #42ad3b solid;
+}
+div{
+ display: flex;
+ flex-direction: column-reverse;
+}
+
 div img{
  width: 10vw;
 }
+
+
+/*div p:nth-of-type(2){
+ order: -1;
+ background-color: red;
+}
+div img{
+ width: 10vw;
+ order: 2;
+}
+div p:nth-of-type(1){
+ order: 3;
+ background-color: yellow;
+}*/
