@@ -1,0 +1,63 @@
+
+
+body{
+ display: grid;
+ grid-template-columns: 1fr 5fr;
+ grid-template-rows: 20vh 10vh 30vh 10vh;
+ grid-gap: 0.5px;
+ color: white;
+ margin: 0px;
+}
+
+header{
+ background-color: purple;
+ grid-column: 1 / 3;
+}
+nav{
+ background-color: skyblue;
+ grid-column: 1 / 3;
+}
+aside{
+ background-color: magenta;
+}
+section{
+ background-color: blueviolet;
+}
+footer{
+ background-color: purple;
+ grid-column: 1 / 3;
+}
+
+
+/*
+            /*Forma 2*/
+/*
+body{
+ display: grid;
+ color: white;
+ grid-template-columns: 200px 1fr;
+ grid-template-rows: 100px 75px 200px 50px;
+ grid-template-areas: "head head" 
+     "nav nav" "aside section" "footer footer" 
+}
+header{
+ background-color: purple;
+ grid-area: head;
+}
+nav{
+ background-color: skyblue;
+ grid-area: nav;
+}
+aside{
+ background-color: magenta;
+ grid-area: aside;
+}
+section{
+ background-color: blueviolet;
+ grid-area: section;
+}
+footer{
+ background-color: purple;
+ grid-area: footer;
+}
+*/
