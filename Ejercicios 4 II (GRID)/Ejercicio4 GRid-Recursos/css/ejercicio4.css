@@ -1,20 +1,75 @@
-/*header{
- background-color: antiquewhite;
- height: 33vh;
- display: flex;
- align-items: center;
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh;
+    grid-gap: 10px;
+}
+header{
+    background-image: url(https://dthezntil550i.cloudfront.net/j7/latest/j72008051029109550000680902/1280_960/03e8fcd9-35d8-4330-9335-b7c3fcddf670.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 33vh;
+    display: flex;
+    align-items: center;
+
+    grid-column: 1 / 4;
 }
 h1{
- font-size: 96px;
- margin-left: 7vh;
- margin-right: 15vh;
+    font-size: 96px;
+    margin-left: 7vh;
+    margin-right: 15vh;
+    color: white;
 }
-*/
+header p:nth-of-type(1){
+    position: absolute;
+    right: 276px;
+    top: 81px;
+}
+header p:nth-of-type(2){
+    position: absolute;
+    right: 125px;
+    top: 101px;
+}
+div:nth-of-type(1){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+}
+div:nth-of-type(2){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+}
+div:nth-of-type(3){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+}
+div:nth-of-type(4){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+}
+div:nth-of-type(5){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+}
+div:nth-of-type(6){
+    background-image: url(http://placekitten.com/305/205);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+}
 
-
-
+/*
 body{
- display: grid;
+display: grid;
  grid-template-columns: 1fr repeat(3, 250px) 1fr;
  grid-template-rows: 1fr repeat(2, 150px);
  grid-template-areas: 
@@ -96,3 +151,4 @@ h1{
  padding-bottom: 5px;
  font-weight: bold;
 }
+*/
