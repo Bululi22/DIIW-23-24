@@ -1,0 +1,91 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0px;
+    background-image: linear-gradient(to right top, #f6bbff, #f5b8fe, #f4b6fe, #f2b3fd, #f1b0fd, #ddbaff, #cdc2ff, #c0c8ff, #afd6ff, #a6e3ff, #a9edfe, #b7f6f6);
+    background-repeat: round;
+    /* overflow-x: hidden; */
+}
+header{
+    margin: 0px;
+    height: 100vh;
+}
+h1{
+    animation:blur-in 0.5s linear both;
+}
+h2{
+    
+    animation:blur-in 0.5s linear both;
+    animation-delay: 1s;
+}
+@keyframes blur-in{
+    0%{filter:blur(12px);opacity:0}
+    100%{filter:blur(0);opacity:1}
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+li{
+    list-style: none;
+    padding: 1vh 4vw;
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-radius: 100vw;
+    box-shadow: 0px 0px 5px 0px black;
+}
+li:hover{
+    box-shadow: 0px 0px 11px 0px black;
+    transition: all .2s linear;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.cabecera {
+    padding: 28vh 0vw;
+    margin: 0vh 6vw;
+}
+.cabecera h1{
+    font-size: 12vw;
+    color: white;
+    text-shadow: 3px 0px 6px black;
+    margin-bottom: 0;
+}
+.cabecera h2{
+    font-size: 5vw;
+}
+.diagonal{
+    transform: skewY(2deg);
+    background-color: white;
+    width: 100%;
+    padding: 20px 0px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    transform: skewY(-2deg);
+    background-color: white;
+    padding: 2vh 2.5vw;
+}
+img{
+    width: 50vw;
+    align-self: center;
+}
+
+
+
+
+
+footer{
+    margin-top: 7vh;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    height: 20vh;
+}
