@@ -61,6 +61,9 @@ a{
 .cabecera h2{
     font-size: 5vw;
 }
+.cabecera img{
+    display: none;
+}
 .diagonal{
     transform: skewY(2deg);
     background-color: white;
@@ -68,24 +71,74 @@ a{
     padding: 20px 0px;
 }
 section{
+    padding: 2vh 2.5vw;
+}
+.seccion_diagonal{
     display: flex;
     flex-direction: column;
     transform: skewY(-2deg);
     background-color: white;
-    padding: 2vh 2.5vw;
 }
 img{
     width: 50vw;
     align-self: center;
 }
-
-
+.seccion_gif{
+    display: none;
+}
+.seccion_compra{
+    margin-top: 8vw;
+    background-color: white;
+}
 
 
 
 footer{
-    margin-top: 7vh;
+    margin-top: 0vh;
     background-color: rgb(8, 8, 8);
     color: white;
     height: 20vh;
+}
+footer p{
+    margin-top: 0px;
+}
+
+
+
+@media (min-width:600px){
+    *{
+        color: red;
+    }
+    .seccion_gif{
+        display: flow;
+        margin-top: 8vw;
+        background-image: url("../img/metagif.gif");
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+}
+@media (min-width:900px){
+    *{
+        color: green;
+    }
+    .cabecera{
+        padding: 0;
+    }
+    .cabecera h1{
+        font-size: 8vw;
+        color: white;
+        text-shadow: 3px 0px 6px black;
+        margin-bottom: 0;
+    }
+    .cabecera h2{
+        margin-top: 0;
+        font-size: 2.5vw;
+        margin-bottom: 1vh;
+    }
+    .cabecera img{
+        display: flex;
+        margin: auto;
+    }
 }
