@@ -1,5 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0px;
@@ -7,15 +8,83 @@ body{
     background-repeat: round;
     /* overflow-x: hidden; */
 }
-header{
+.pagPrincipal{
     margin: 0px;
     height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: repeat(3, 100%);
+    grid-gap: 5px; */
+    grid-template-areas: 
+        "info1"
+        "gif"
+        "animacion"
+        "compra";
+}
+
+main div:nth-of-type(1){
+    grid-area: info1;
+}
+main section:nth-of-type(2){
+    grid-area: gif;
+}
+main section:nth-of-type(3){
+    grid-area: animacion;
+}
+main section:nth-of-type(4){
+    grid-area: compra;
+}
+.cookies {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-family: arial;
+    text-align: center;
+    z-index: 5;
+    border-radius: 15px 15px 0 0;
+}
+.cookies h2{
+    margin: 0;
+    margin-top: 1vh;
+}
+.cookies p{
+    margin: auto;
+    color: white;
+}
+.cookies__boton {
+    background: initial;
+    border: 2px solid white;
+    font-size: 1rem;
+    color: white;
+    width: 5rem;
+    text-align: center;
+    height: 4vh;
+    border-radius: 1vw;
+    margin: 0.3vw;
+}
+.cookies__botones {
+    align-items: center;
+    margin: 1vw;
+}
+.si:hover{
+    background-color: lightgreen;
+    transition: all .1s linear;
+}
+.no:hover{
+    background-color: lightcoral;
+    transition: all .1s linear;
 }
 h1{
     animation:blur-in 0.5s linear both;
 }
-h2{
-    
+h2{ 
     animation:blur-in 0.5s linear both;
     animation-delay: 1s;
 }
@@ -23,14 +92,37 @@ h2{
     0%{filter:blur(12px);opacity:0}
     100%{filter:blur(0);opacity:1}
 }
+#logo{
+    position: fixed;
+    z-index: 50;
+    height: 4vh;
+    width: auto;
+    right: 1vw;
+    top: 1vh;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+#logo:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 0;
+}
+nav img{
+    height: 4vh;
+    width: auto;
+}
 ul{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-start;
     gap: 5vw;
-    margin-top: 2vh;
     margin-left: 6vw;
+    
 }
 li{
     list-style: none;
@@ -44,7 +136,7 @@ li:hover{
     transition: all .2s linear;
 }
 
-a{
+li a{
     text-decoration: none;
     color: #3d3d3d;
 }
@@ -72,16 +164,34 @@ a{
     transform: skewY(2deg);
     background-color: white;
     width: 100%;
-    padding: 20px 0px;
+    padding: 3vw 0px;
 }
 section{
     padding: 2vh 2.5vw;
 }
 .seccion_diagonal{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: repeat(3, 100%);
+    grid-gap: 5px; */
+    grid-template-areas: 
+        "h2"
+        "p"
+        "img";
+    justify-items: center;
+
     transform: skewY(-2deg);
     background-color: white;
+}
+
+.seccion_diagonal h2{
+    grid-area: h2;
+}
+.seccion_diagonal p{
+    grid-area: p;
+}
+.seccion_diagonal img{
+    grid-area: img;
 }
 img{
     width: 50vw;
@@ -90,12 +200,41 @@ img{
 .seccion_gif{
     display: none;
 }
+.seccion_animacion{
+    display: none;
+}
 .seccion_compra{
+    display: grid;
+    /* grid-template-columns: 2fr 1fr;
+    grid-template-rows: 8vh auto;
+    grid-gap: 5px; */
+    grid-template-areas:
+        "h2"
+        "precio"
+        "boton";
+    justify-items: center;
+
+
     margin-top: 8vw;
+    padding: 0;
     background-color: white;
 }
-
-
+.seccion_compra h2{
+    grid-area: h2;
+}
+.seccion_compra p{
+    grid-area: precio;
+}
+.seccion_compra a{
+    grid-area: boton;
+    background: #506eff;
+    color: white;
+    padding: 2vh 24vw;
+    text-decoration: none;
+}
+.seccion_compra a:hover{
+    background: #6982ff;
+}
 
 footer{
     margin-top: 0vh;
@@ -120,24 +259,117 @@ footer p{
         font-size: 3vw;
     }
     .seccion_gif{
-        display: flow;
+        position: relative;
+        display: flex;
         margin-top: 8vw;
-        background-image: url("../img/metagif.gif");
+        padding: 0;
+        /* background-image: url("../img/metagif.gif"); */
         background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
     }
+    .seccion_gif img:nth-of-type(2){
+        display: none;
+    }
+    .seccion_gif img{
+        width: 100%;
+    }
+    .seccion_gif div{
+        position: absolute;
+        left: 35.5vw;
+        top: 50%;
+    }
+    .seccion_gif a{
+        padding: 2vh 2vw;
+        background: #506eff;
+        border-radius: 1vw;
+        color: white;
+        text-decoration: none;
+    }
+    .seccion_gif a:hover{
+        box-shadow: 0px 0px 11px 0px black;
+        transition: all .2s linear;
+        background: #6982ff;
+    }
+    .seccion_animacion{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        margin-top: 8vw;
+    }
+    .seccion_animacion img{
+        width: 3vw;
+    }
+    .seccion_animacion img:nth-of-type(1){
+        height: 65vh;
+        position: relative;
+        width: 65vw;
+    }
+    .seccion_animacion img:nth-of-type(2){
+        animation:alien ease-in-out both;;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        width: 7vw;
+    }
+    .seccion_animacion img:nth-of-type(3){
+        animation:mira ease-in-out both;;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes alien{
+        0%   {left:50%; top:50%;}
+        15%  {left:30%; top:20%;}
+        40%  {left:60%; top:70%;}
+        65%  {left:27%; bottom:10%;}
+        80.5% {left:50%; top:50%; width: 7vw;}
+        95% {width: 0;}
+        100% {left:50%; top:50%;}
+    }
+    @keyframes mira{
+        0%   {left:50%; top:50%;}
+        20%  {left:30%; top:20%;}
+        45%  {left:60%; top:70%;}
+        70%  {left:27%; bottom:10%;}
+        80% {left:49.9%; top:49.9%; width: 3vw;}
+        80.5% {left:50%; top:50%;width: 4vw;}
+        81.5% {left:52%; top:49.5%; width: 3vw;}
+        100% {left:50%; top:50%;}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .seccion_compra{
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+            "h2 h2"
+            "precio boton";
+    }
 }
 @media (min-width:900px){
     *{
         color: green;
-    }
-    nav{
-        margin-bottom: 1vh;
-    }
-    a{
-        font-size: 1.2vw;
     }
     .cabecera{
         padding: 0;
@@ -157,5 +389,38 @@ footer p{
         display: flex;
         width: 70vh;
         margin-top: 6vh;
+        transform: scale(1);
+        transition-duration: 1s;
     }
+    .cabecera img:hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+    .seccion_diagonal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 8vh auto; 
+        grid-gap: 5px;
+        grid-template-areas: 
+            "h2 img"
+            "p img";
+        justify-items: start;
+    }
+    .seccion_diagonal img{
+        width: 30vw;
+    }
+
+
+    .seccion_gif img{
+        width: 50%;
+    }
+    .seccion_gif img:nth-of-type(2){
+        display: inline;
+    }
+    .seccion_gif div{
+        position: absolute;
+        left: 40.5vw;
+        top: 50%;
+    }
+    
 }

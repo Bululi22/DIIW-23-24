@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adrián Ferradás">
+    <title>Quest 3 100% real</title>
+    <meta name="description" content="Proyecto DIIW 23-24">
+    <link rel="icon" type="image/x-icon" href="img/logo-meta.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Quest 3 100% real</title>
 </head>
 <body>
-    <header>
+    <div class="cookies" id="cookies">
+        <p class="cookies__texto">Este sitio web utiliza cookies para mejorar su experiencia en el sitio web. Para más información consulta nuestra <a href="#">Política de Privacidad</a></p>
+        <div class="cookies__botones">
+            <button class="cookies__boton si" onclick="ocultar('cookies')">Si</button>
+            <button class="cookies__boton no" onclick="ocultar('cookies')">No</button>
+        </div>
+    </div>
+    <header class="pagPrincipal">
         <nav>
             <ul>
                 <li><a href="#contact">Contacto</a></li>
                 <li><a href="#about">About</a></li>
             </ul>   
         </nav>
+        <img id="logo" src="img/logo-meta.svg" alt="logo-meta" onclick="up()">
         <div class="cabecera">
             <h1>Meta Quest 3</h1>
             <h2>Convierte tu casa en todo lo que quieras con la realidad mixta</h2>
@@ -32,19 +43,38 @@
             </section>
         </div>
         <section class="seccion_gif">
-            <h2>hola</h2>
-            <p>Es funny</p>
+            <img src="img/metagif.gif" alt="gif1">
+            <img src="img/gif-2.gif" alt="gif2">
+            <div>
+                <a href="https://www.meta.com/es/quest/quest-3/" target="_blank">Explora más productos</a>
+            </div>
+        </section>
+        <section class="seccion_animacion">
+            <h2>ALIEN PUM</h2>
+            <p>Con la compra de las QUEST 3 te regalamos "Alien Pum"</p>
+            <img src="img/fondo-bosque.jpg" alt="fondo bosque">
+            <img src="img/alien.png" alt="alien">
+            <img src="img/mira.png" alt="mira">
         </section>
         <section class="seccion_compra">
-            <h2>Compra</h2>
-            <p>Compra</p>
-            <button>Compra</button>
+            <h2>No esperes más</h2>
+            <p>500€</p>
+            <a href="https://www.meta.com/es/quest/" target="_blank">Comprar</a>
         </section>
     </main>
-    
-
+    <footer>
+        <p>Soy footer</p>
+    </footer>
 </body>
-<footer>
-    <p>Soy footer</p>
-</footer>
 </html>
+<script>
+    function ocultar(id){
+        var elemento = document.getElementById(id);
+        elemento.style.display = "none";
+    }
+    function up() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+
+    }
+</script>
