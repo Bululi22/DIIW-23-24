@@ -57,11 +57,9 @@ body{
     background-color: lightcoral;
     transition: all .1s linear;
 }
-main{
-    height: 90vh;
-}
 h1{
     animation:blur-in 0.5s linear both;
+    text-align: center;
 }
 h2{ 
     animation:blur-in 0.5s linear both;
@@ -76,6 +74,7 @@ h2{
     z-index: 50;
     height: 4vh;
     width: auto;
+    margin: 1vh 0;
     right: 1vw;
     top: 1vh;
     transform: scale(1);
@@ -88,14 +87,10 @@ h2{
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 1vh 0;
-}
-nav img{
-    height: 4vh;
-    width: auto;
+    background-color: whitesmoke;
 }
 ul{
-    margin: 0;
+    margin: 1vh 0;
     padding: 0;
     display: flex;
     justify-content: flex-start;
@@ -139,7 +134,9 @@ form{
 
 
 
-
+textarea{
+    width: 100%;
+}
 
 
 footer{

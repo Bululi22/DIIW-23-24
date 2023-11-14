@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style copy.css">
+        <link rel="stylesheet" type="text/css" href="css/form_style.css">
     </head>
 <body>
     <header>
@@ -24,28 +24,33 @@
     </header>
     <main>
         <h1>Contacto</h1>
-        <form action="../../form-result.php" method="get" target="_blank">
+        <form action="#" method="get" target="_blank">
             <fieldset>     
-            <legend>Información básica</legend>     
-            <p><label>Nombre completo: <input type="text" name="nombrecompleto"></label></p>     
-            <p><label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>     
-            <p>Gender:     
-                <label><input type="radio" name="genero" value="masculino"> Masculino</label>    
-                <label><input type="radio" name="genero" value="femenino"> Femenino</label>
-            </p>
-            <p><label>Dirección: <input type="text" name="direccion"></label></p>
-            <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+                <legend>Información básica</legend>     
+                <label>Nombre completo: <input type="text" name="nombrecompleto"></label>   
+                <label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label>     
+                <p>Genero:     
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>    
+                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                </p>
+                <label>Dirección: <input type="text" name="direccion"></label>
+                <label>Número telefónico: <input type="tel" name="telefono"></label>
             </fieldset>
             <fieldset>
-            <legend>Información extra</legend>
-            <p>Interests:
-                <label><input type="checkbox" name="libros"> Libros</label>
-                <label><input type="checkbox" name="peliculas"> Películas</label>
-                <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
-            </p>
-            <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+                <legend>Información extra</legend>
+                <p>¿De que color te gustaria ver la Quest 3?:</p>
+                <label><input type="checkbox" name="verde"> Verde</label>
+                <label><input type="checkbox" name="negro"> Negro</label>
+                <label><input type="checkbox" name="azul"> Azul</label>
+                
+            </fieldset>
+            <fieldset>     
+                <legend>Más Informacion</legend> 
+                <label for="w3review">Cuentanos tu consulta:</label>
+                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
             </fieldset>
             <p>
+            <label>Aceptas?</label><input type="checkbox" name="aceptar"><br>
             <input type="submit" value="Enviar datos">
             <input type="reset" value="Restaurar formulario">
             </p>
