@@ -57,6 +57,9 @@ body{
     background-color: lightcoral;
     transition: all .1s linear;
 }
+main{
+    min-height: 88vh;
+}
 h1{
     animation:blur-in 0.5s linear both;
     text-align: center;
@@ -122,20 +125,16 @@ form{
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-textarea{
+input[type=text], input[type=date], input[type=tel], textarea {
     width: 100%;
+}
+
+fieldset{
+    border: solid 2px #4481e7;
+    border-radius: 10px;
+}
+.final_form{
+    text-align: center;
 }
 
 
@@ -155,17 +154,37 @@ footer p{
     *{
         color: red;
     }
-    .seccion_compra{
-        display: grid;
-        grid-template-columns: 1.1fr 1fr;
-        grid-gap: 5px;
-        grid-template-areas: 
-            "h2 h2"
-            "precio boton";
+    fieldset{
+        border-style: outset;
+        border-width: 6px;
     }
 }
 @media (min-width:900px){
     *{
         color: green;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "uno dos"
+            "tre tre"
+            "fin fin";
+    }
+    fieldset:nth-of-type(1){
+        grid-area: uno;
+    }
+    fieldset:nth-of-type(2){
+        grid-area: dos;
+    }
+    fieldset:nth-of-type(3){
+        grid-area: tre;
+    }
+    .final_form{
+        grid-area: fin;
+    }
+    fieldset{
+        border-style: outset double;
+        border-width: 10px;
     }
 }

@@ -27,33 +27,38 @@
         <form action="#" method="get" target="_blank">
             <fieldset>     
                 <legend>Información básica</legend>     
-                <label>Nombre completo: <input type="text" name="nombrecompleto"></label>   
-                <label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label>     
-                <p>Genero:     
+
+                <label>Nombre completo: <input type="text" name="nombrecompleto"></label><br> 
+
+                <label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label><br>
+
+                <p>Genero:
                     <label><input type="radio" name="genero" value="masculino"> Masculino</label>    
                     <label><input type="radio" name="genero" value="femenino"> Femenino</label>
                 </p>
-                <label>Dirección: <input type="text" name="direccion"></label>
+                <label>Dirección: <input type="text" name="direccion"></label><br>
+                
                 <label>Número telefónico: <input type="tel" name="telefono"></label>
             </fieldset>
+
             <fieldset>
                 <legend>Información extra</legend>
                 <p>¿De que color te gustaria ver la Quest 3?:</p>
-                <label><input type="checkbox" name="verde"> Verde</label>
-                <label><input type="checkbox" name="negro"> Negro</label>
-                <label><input type="checkbox" name="azul"> Azul</label>
+                    <label><input type="checkbox" name="verde"> Verde</label>
+                    <label><input type="checkbox" name="negro"> Negro</label>
+                    <label><input type="checkbox" name="azul"> Azul</label>
                 
             </fieldset>
             <fieldset>     
                 <legend>Más Informacion</legend> 
                 <label for="w3review">Cuentanos tu consulta:</label>
-                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                <textarea name="w3review" rows="4" cols="50"></textarea>
             </fieldset>
-            <p>
-            <label>Aceptas?</label><input type="checkbox" name="aceptar"><br>
-            <input type="submit" value="Enviar datos">
-            <input type="reset" value="Restaurar formulario">
-            </p>
+            <div class="final_form">
+                <label><input type="checkbox" name="aceptar">Aceptas?</label><br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Restaurar formulario">
+            </div>
         </form>
     </main>
     <footer>
