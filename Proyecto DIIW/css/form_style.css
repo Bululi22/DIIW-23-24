@@ -136,7 +136,11 @@ fieldset{
 .final_form{
     text-align: center;
 }
-
+.final_form p{
+    font-style: italic;
+    font-size: 1vw;
+    text-align: left;
+}
 
 footer{
     margin-top: 0vh;

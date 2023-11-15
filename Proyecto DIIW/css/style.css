@@ -324,7 +324,7 @@ footer p{
     }
     @keyframes alien{
         0%   {left:50%; top:50%;}
-        15%  {left:30%; top:20%;}
+        15%  {left:30%; top:30%;}
         40%  {left:60%; top:70%;}
         65%  {left:27%; bottom:10%;}
         80.5% {left:50%; top:50%; width: 7vw;}
@@ -333,7 +333,7 @@ footer p{
     }
     @keyframes mira{
         0%   {left:50%; top:50%;}
-        20%  {left:30%; top:20%;}
+        20%  {left:30%; top:30%;}
         45%  {left:60%; top:70%;}
         70%  {left:27%; bottom:10%;}
         80% {left:49.9%; top:49.9%; width: 3vw;}
