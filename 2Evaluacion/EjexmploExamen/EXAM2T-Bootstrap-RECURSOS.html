@@ -44,20 +44,30 @@
 
 
 
-	<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-			<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-body-secondary bg-dark p-4" style="--bs-scroll-height: 100px;">
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">REAS</a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">MERCADO SOCIAL</a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">LOGIN</a></li>
-				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">IDIOMA</a></li>
-		</ul>
+
+
+
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+	<div class="bg-dark p-4">
+		<ul class="row p-0 text-white list-unstyled">
+			<li class="nav-item bg-danger col-6 text-start"><a class="nav-link active" aria-current="page" href="#">REAS</a></li>
+			<li class="nav-item bg-secondary col-6 text-end"><a class="nav-link active" aria-current="page" href="#">MERCADO SOCIAL</a></li>
+			<li class="nav-item bg-info col-6 text-start"><a class="nav-link active" aria-current="page" href="#">LOGIN</a></li>
+			<li class="nav-item bg-warning col-6 text-end"><a class="nav-link active" aria-current="page" href="#">IDIOMA</a></li>
+	</ul>
+	</div>
 </div>
 <nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
+	<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			</button>
+			<form class="d-flex" role="search" data-bs-theme="dark">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	</div>
+	
 </nav>
 
 
@@ -68,21 +78,16 @@
 
 
 
-
-
-
-
-
 	
-		<div>
-			<img src="./img/logoESS.png">
+		<div class="row">
+			<img class="bg-success col-12 p-4" src="./img/logoESS.png">
 		</div>
 
 	</header>
 	<main>
 		<!--2. MENU-->
 		<nav>
-			<p</p>
+			<p>Seleccionar página</p>
 			<button>Menú</button>
 			<ul>
 			  <li><a href="#">Consumo responsable</a></li>
