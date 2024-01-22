@@ -6,172 +6,277 @@
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 				<title>EXAMEN BOOTSTRAP - 2T - 2023</title>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--CARGA ARCHIVOS BOOTSTRAP-->
 	
 	
 </head>
 <body>
-	
 	<!--MENU SUPERIOR-->
 	<header>
-		<!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+		<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+			<div class="bg-dark p-4">
+				<ul class="row p-0 text-white list-unstyled">
+					<li class="nav-item bg-danger col-6 text-start"><a class="nav-link active" aria-current="page" href="#">REAS</a></li>
+					<li class="nav-item bg-secondary col-6 text-end"><a class="nav-link active" aria-current="page" href="#">MERCADO SOCIAL</a></li>
+					<li class="nav-item bg-info col-6 text-start"><a class="nav-link active" aria-current="page" href="#">LOGIN</a></li>
+					<li class="nav-item bg-warning col-6 text-end"><a class="nav-link active" aria-current="page" href="#">IDIOMA</a></li>
+			</ul>
+			</div>
+		</div>
+		<nav class="navbar navbar-dark bg-dark">
 			<div class="container-fluid">
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    	</button>
-					<div class="collapse navbar-collapse" id="navbarScroll">
-							<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-									<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">REAS</a></li>
-									<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">MERCADO SOCIAL</a></li>
-									<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">LOGIN</a></li>
-									<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">IDIOMA</a></li>
-							</ul>
-							<form class="d-flex" role="search">
-									<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-									<button class="btn btn-outline-success" type="submit">Buscar</button>
-							</form>
-					</div>
+							<span class="navbar-toggler-icon"></span>
+					</button>
+					<form class="d-flex" role="search" data-bs-theme="dark">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
 			</div>
-	</nav> -->
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-	<div class="bg-dark p-4">
-		<ul class="row p-0 text-white list-unstyled">
-			<li class="nav-item bg-danger col-6 text-start"><a class="nav-link active" aria-current="page" href="#">REAS</a></li>
-			<li class="nav-item bg-secondary col-6 text-end"><a class="nav-link active" aria-current="page" href="#">MERCADO SOCIAL</a></li>
-			<li class="nav-item bg-info col-6 text-start"><a class="nav-link active" aria-current="page" href="#">LOGIN</a></li>
-			<li class="nav-item bg-warning col-6 text-end"><a class="nav-link active" aria-current="page" href="#">IDIOMA</a></li>
-	</ul>
-	</div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-	<div class="container-fluid">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			</button>
-			<form class="d-flex" role="search" data-bs-theme="dark">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-		</form>
-	</div>
-	
-</nav>
-
-
-
-
-
-
-
-
-
-	
-		<div class="row">
-			<img class="bg-success col-12 p-4" src="./img/logoESS.png">
+		</nav>
+		<!-- <div class="">
+			<img class="container-fluid p-0 " src="./img/Feminismo y ESS.jpg">
+		</div> -->
+		<div class="">
+			<img class="bg-success container-fluid" src="./img/logoESS.png">
 		</div>
-
 	</header>
-	<main>
+
+	<main class="">
 		<!--2. MENU-->
-		<nav>
-			<p>Seleccionar página</p>
-			<button>Menú</button>
-			<ul>
-			  <li><a href="#">Consumo responsable</a></li>
-			  <li><a href="#">Finanzas éticas</a></li>
-			  <li><a href="#">Políticas públicas</a></li>
-			  <li><a href="#">Economía Social y Solidaria</a></li>
-			  <li><a href="#">Comercio Justo</a></li>
-			  <li><a href="#">Ecologismo</a></li>
-			  <li><a href="#">Feminismo</a></li>
+		<nav class="row dropdown mx-2">
+			<p class="col-6 col-md-7 text-end">Seleccionar página</p>
+			<button class="col-6 col-md-5 btn btn-light dropdown-toggle text-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</button>
+			<ul class="dropdown-menu text-center col-md-6">
+			  <li><a class="dropdown-item bg-success text-white fw-bold rounded my-1" href="#">Consumo responsable</a></li>
+			  <li><a class="dropdown-item bg-secondary text-white fw-bold rounded my-1" href="#">Finanzas éticas</a></li>
+			  <li><a class="dropdown-item bg-success text-white fw-bold rounded my-1" href="#">Políticas públicas</a></li>
+			  <li><a class="dropdown-item bg-secondary text-white fw-bold rounded my-1" href="#">Economía Social y Solidaria</a></li>
+			  <li><a class="dropdown-item bg-success text-white fw-bold rounded my-1" href="#">Comercio Justo</a></li>
+			  <li><a class="dropdown-item bg-secondary text-white fw-bold rounded my-1" href="#">Ecologismo</a></li>
+			  <li><a class="dropdown-item bg-success text-white fw-bold rounded my-1" href="#">Feminismo</a></li>
 			</ul>
 		</nav>
 
+		
+
 		<!--2. TITULO IMAGEN TEXTO Y REDES SOCIALES-->
-		<section>
+		<section class="row m-1">
 			<!--TITULO-->
-			<h1>El feminismo y la economía social solidaria: un breve llamado a la acción</h1>
+			<h1 class="animate__animated animate__bounce">El feminismo y la economía social solidaria: un breve llamado a la acción</h1>
 			<!--IMAGEN-->
-			<img src="./img/Feminismo y ESS.jpg">
+			<img class="col-md-4" src="./img/Feminismo y ESS.jpg">
 			<!--TEXTO-->
-			<p>El siguiente texto es una traducción del apasionante discurso de clausura de Marian Díez en la reciente reunión de convergencia del Foro Social Mundial para las Economías Transformativas .
+			<p class="col-md-8 col-lg-6">El siguiente texto es una traducción del apasionante discurso de clausura de Marian Díez en la reciente reunión de convergencia del Foro Social Mundial para las Economías Transformativas .
 				El evento de cierre estuvo lleno de presentaciones sólidas, pero elegimos a Marian por su visión general del alcance y la variedad de la Economía de Solidaridad Social en España y, en segundo lugar, para resaltar la necesidad de complementariedad interseccional entre los movimientos postcapitalistas. Este artículo también está estrechamente vinculado a nuestra traducción de Una Carta para la Economía Social Solidaria.
 			</p>
 			<!--REDES SOCIALES-->
-			<aside>
-				<img src="./img/RedesSociales/Redessociales1.png">
-				<img src="./img/RedesSociales/Redessociales2.png">
-				<img src="./img/RedesSociales/Redessociales3.png">
-				<img src="./img/RedesSociales/Redessociales4.png">
-				<img src="./img/RedesSociales/Redessociales5.png">
+			<aside class="col-12 col-lg-2 d-flex justify-content-center justify-content-md-end">
+				<img class="m-1 w-auto" src="./img/RedesSociales/Redessociales1.png">
+				<img class="m-1 w-auto" src="./img/RedesSociales/Redessociales2.png">
+				<img class="m-1 w-auto" src="./img/RedesSociales/Redessociales3.png">
+				<img class="m-1 w-auto" src="./img/RedesSociales/Redessociales4.png">
+				<img class="m-1 w-auto" src="./img/RedesSociales/Redessociales5.png">
 			</aside>
 		</section>
 
 
 		<!--CAROUSEL-->
-		<section>
-			<img src="./img/Carrousel/comercio-y-solidaridad-comercio-justo.webp">
-			<img src="./img/Carrousel/escenaris_de_futuro.png">
-			<img src="./img/Carrousel/hamster_capitalista.png">
-			<img src="./img/Carrousel/ImagenLucha-Amarilla.jpeg">
-			<img src="./img/Carrousel/PLASTICO.png">
-			<img src="./img/Carrousel/Una-Palanca-para-Mover-el-Mundo-300x194.jpg">
-			<img src="./img/Carrousel/UnionRenovables.jpg">
-		</section>
+		<div id="carouselExampleIndicators" class="carousel slide mx-5"  data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="2000000">
+					<img src="./img/Carrousel/comercio-y-solidaridad-comercio-justo.webp" class="d-block w-100">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/escenaris_de_futuro.png" class="d-block w-100">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/hamster_capitalista.png" class="d-block w-100" alt="Slide 3">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/ImagenLucha-Amarilla.jpeg" class="d-block w-100">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/PLASTICO.png" class="d-block w-100">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/Una-Palanca-para-Mover-el-Mundo-300x194.jpg" class="d-block w-100">
+				</div>
+				<div class="carousel-item" data-bs-interval="20">
+					<img src="./img/Carrousel/UnionRenovables.jpg" class="d-block w-100">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
 
 		<!--ARTÍCULOS-->
-		<section>
-			<h2>Artículos relacionados:</h2>
-				<div>
-					<h2>Cooperativas de Consumo<p> Leer <span> 99+ </span></p></h2>
-					<img src="./img/Articulos/CooperativasConsumo.png" alt="...">
-					<h5>Manual para la conformación de cooperativas de consumo (MX)</h5>
-					<p>¿Cómo generar una cooperativa de consumo? ¿La organización para la compra conglomerada es posible? ¿Qué opciones tengo como pequeño productor?… Todo eso y más en este manual.</p>
-					<a href="#">Descargar</a>
+		<h2 class="bg-success py-4 px-2">Artículos relacionados:</h2>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-primary-subtle d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#uno" aria-expanded="false" aria-controls="collapseOne">
+					<h2 class="flex-grow-1">Cooperativas de Consumo</h2><p class="btn bg-success position-relative"> Leer <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"> 99+ </span></p>			  
+			  </h2>
+			  <div id="uno" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<div class="card text-center mb-3 container-fluid" style="width: 18rem;">
+						<img src="./img/Articulos/CooperativasConsumo.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Manual para la conformación de cooperativas de consumo (MX)</h5>
+							<p class="card-text">Cómo generar una cooperativa de consumo? ¿La organización para la compra conglomerada es posible? ¿Qué opciones tengo como pequeño productor?… Todo eso y más en este manual.</p>
+							<a href="#" class="btn btn-primary">Descargar</a>
+						</div>
+					</div>
 				</div>
+			  </div>
+			</div>
 
-				<div>
-					<h2>Materiales didácticos<p> Leer <span> 133 </span></p></h2>
-					<img src="./img/Articulos/manual_materiales_didacticos-300x215.png" alt="...">
-					<h5>Materiales didácticos para trabajar las finanzas éticas y alternativas</h5>
-					<p>Este manual de materiales didácticos quiere recoger los recursos que están puestos a disposición en la página web de RedEFES en un documento de fácil acceso para que los materiales en educación en finanzas éticas y alternativas se vayan introduciendo y aplicando en el aula.</p>
-					<a href="#">Descargar</a>
+
+
+
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-primary-subtle d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#uno" aria-expanded="false" aria-controls="collapseOne">
+					<h2 class="flex-grow-1">Materiales didácticos</h2><p class="btn bg-success position-relative"> Leer <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"> 133 </span></p>			  
+			  </h2>
+			  <div id="uno" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<div class="card text-center mb-3 container-fluid" style="width: 18rem;">
+						<img src="./img/Articulos/manual_materiales_didacticos-300x215.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Materiales didácticos para trabajar las finanzas éticas y alternativas</h5>
+							<p class="card-text">Este manual de materiales didácticos quiere recoger los recursos que están puestos a disposición en la página web de RedEFES en un documento de fácil acceso para que los materiales en educación en finanzas éticas y alternativas se vayan introduciendo y aplicando en el aula.</p>
+							<a href="#" class="btn btn-primary">Descargar</a>
+						</div>
+					</div>
 				</div>
+			  </div>
+			</div>
+	
 
-				<div>
-					<h2>Ajardinar el Abismo<p> Leer <span> 97 </span></p></h2>
-					<img src="./img/Articulos/AjardinarElAbismo.png" alt="...">
-					<h5>Conclusiones eje IDEARIA «Desde el campo hasta el consumo»</h5>
-					<p>El objetivo de este eje era crear un espacio de intercambio entre los distintos agentes del sector alimentario agroecológico para explorar posibles colaboraciones, pensar sobre cómo aliarnos para transformar el sistema alimentario hacia la agroecología y la soberanía alimentaria, compartir recursos y multiplicar fuerzas.</p>
-					<a href="#">Descargar</a>
+
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-primary-subtle d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#dos" aria-expanded="false" aria-controls="collapseOne">
+					<h2 class="flex-grow-1">Ajardinar el Abismo</h2><p class="btn bg-success position-relative"> Leer <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"> 97 </span></p>
+			  </h2>
+			  <div id="dos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<div class="card text-center mb-3 container-fluid" style="width: 18rem;">
+						<img src="./img/Articulos/AjardinarElAbismo.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Conclusiones eje IDEARIA «Desde el campo hasta el consumo»</h5>
+							<p class="card-text">El objetivo de este eje era crear un espacio de intercambio entre los distintos agentes del sector alimentario agroecológico para explorar posibles colaboraciones, pensar sobre cómo aliarnos para transformar el sistema alimentario hacia la agroecología y la soberanía alimentaria, compartir recursos y multiplicar fuerzas.</p>
+							<a href="#" class="btn btn-primary">Descargar</a>
+						</div>
+					</div>
 				</div>
+			  </div>
+			</div>
 
-				<div>
-					<h2>Libre de Agresiones<p> Leer <span> 99+ </span></p></h2>
-					<img src="./img/Articulos/LibredeAgresiones.png" alt="...">
-					<h5>Protocolo Feminista de RIPESS Europa</h5>
-					<p>Para nosotrxs un espacio seguro para todxs es aquel en el que las personas son libres de expresarse, relacionarse, convivir y actuar como quieran, cuando quieran y con quien quieran sin enfrentarse al riesgo de violencia o persecución por razón de género, raza/etnia, sexualidad, clase, identidad, estatus migratorio, origen geográfico, edad, religión, diversidad neurofuncional, etc.</p>
-					<a href="#">Descargar</a>
-				</div>	
-		</section>
+
+
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-primary-subtle d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#dos" aria-expanded="false" aria-controls="collapseOne">
+					<h2 class="flex-grow-1">Libre de Agresiones</h2><p class="btn bg-success position-relative"> Leer <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"> 99+ </span></p>
+				  
+			  </h2>
+			  <div id="dos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<div class="card text-center mb-3 container-fluid" style="width: 18rem;">
+						<img src="./img/Articulos/LibredeAgresiones.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Protocolo Feminista de RIPESS Europa</h5>
+							<p class="card-text">Para nosotrxs un espacio seguro para todxs es aquel en el que las personas son libres de expresarse, relacionarse, convivir y actuar como quieran, cuando quieran y con quien quieran sin enfrentarse al riesgo de violencia o persecución por razón de género, raza/etnia, sexualidad, clase, identidad, estatus migratorio, origen geográfico, edad, religión, diversidad neurofuncional, etc.</p>
+							<a href="#" class="btn btn-primary">Descargar</a>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+
 	</main>	
 
 	<!--CONTACTO-->
 	<footer>
-		<hr>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary d-grid col-3 mx-auto mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			Contacto
+		</button>
+		
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">ALTA</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+						  <label for="exampleInputEmail1" class="form-label">Email</label>
+						  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						  <div id="emailHelp" class="form-text">Esta cuenta de correo electrónico no será compartida bajo ningún concepto con otras entidades</div>
+						</div>
+						<div class="mb-3">
+						  <label for="exampleInputPassword1" class="form-label">Password</label>
+						  <input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+						  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						  <label class="form-check-label" for="exampleCheck1">Marca para indicar que no eres una máquina</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					  </form>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				<button type="button" class="btn btn-primary">Guardar cambios</button>
+				</div>
+			</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		<!-- <hr>
 		<button type="button">Contacto</button>
     	<form>
 			<label>Email</label>
@@ -187,7 +292,7 @@
 			<button type="submit">Enviar</button>
 		</form>
 		<button type="button">Cerrar</button>
-		<button>Guardar cambios</button>
+		<button>Guardar cambios</button> -->
 	</footer>
 </body>
 </html>
